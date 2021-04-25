@@ -54,6 +54,7 @@ export class ProductController {
         return res.status(HttpStatus.OK).json(products);
     }
     
+    
   
     // calcula RSI
     @Get('/calcula/RSI')
@@ -155,20 +156,29 @@ export class ProductController {
     }
 
 
-    // calcula Spread
+    // calcula Spread y promedio periodo data
     @Get('/calcula/SPREAD')
     async getCalculoSpread(@Res() res) {
-        const out=[]
-        out.push('  Fecha    Spread')
+        const data=[]
+        const arreglo=[]
+        data.push('  Fecha    Spread')
+
         const products = await this.productService.getProductos();
+
         products.forEach((element,i)=>{
             const ddi = Number(element.Close) - Number(element.Open)
-            out.push(element.Fecha.toLocaleString().substr(0,9)+'  '+
+            data.push(element.Fecha.toLocaleString().substr(0,9)+'  '+
                      ddi.toFixed(2))
-            return out
+            arreglo.push(Number(ddi))
+            return {data,arreglo}
         })
-        return res.status(HttpStatus.OK).json(out);
+
+        const red = (accumulator, currentValue) => accumulator + currentValue;
+        const average = (arreglo.reduce(red) / arreglo.length)
+
+        return res.status(HttpStatus.OK).json({data,average});
     }
+
 
 
     // obtiene un producto por ID
@@ -178,6 +188,8 @@ export class ProductController {
         if (!product) throw new NotFoundException('Producto no existe!');
         return res.status(HttpStatus.OK).json(product);
     }
+
+
 
     // borra un producto por ID
     @UseInterceptors(MorganInterceptor('combined'))
@@ -190,6 +202,7 @@ export class ProductController {
             productDeleted
         });
     }
+
 
     // modifica un producto
     @Put('/update')
