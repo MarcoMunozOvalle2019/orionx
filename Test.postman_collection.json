@@ -1,0 +1,1368 @@
+{
+	"info": {
+		"_postman_id": "016d8a75-ceb8-4791-8876-216d03cf26f6",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"value": "1703323053103110885/10.0.1.4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "products Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"value": "1703323053103110885/10.0.1.4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "products por product params",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"value": "1703323053103110885/10.0.1.4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "products por product query",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/plain"
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"type": "text",
+						"value": "1703323053103110885/10.0.1.4"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/productos?p1=123&p2=456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "p1",
+							"value": "123"
+						},
+						{
+							"key": "p2",
+							"value": "456"
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "checkout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/plain",
+						"disabled": true
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"type": "text",
+						"value": "1703323053103110885/10.0.1.4",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t[ \r\n\t\t\"CHAIR_RED CONEJITA\",\r\n\t    \"DIS_15-STOOL_GREEN\"\r\n\t]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/checkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkout"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "golang",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/plain",
+						"disabled": true
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"type": "text",
+						"value": "1703323053103110885/10.0.1.4",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"ID\": 1,\r\n        \"Name\": \"Task One1\",\r\n        \"Content\": \"Some Content\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "rutas lista por nombre",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/plain"
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"type": "text",
+						"value": "1703323053103110885/10.0.1.4"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/productos/CHAIR_WHITE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"CHAIR_WHITE"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "rutas lista completa",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/plain"
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"type": "text",
+						"value": "1703323053103110885/10.0.1.4"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/productos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "__Rodrigo Modifica uno directo final",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\" :\"cambiando433\",\r\n   \"createdOn\": \"2019-04-08T11:28:20.906+0000\",\r\n   \"startDate\": \"2019-04-08T11:28:20.906+0000\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9200/marcos/_doc/133",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"marcos",
+						"_doc",
+						"133"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "__Rodrigo lee todos directo final",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": {   \r\n    \"match\": {\"index\": \"marcos\" }\r\n      }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9200/marcos/_search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"marcos",
+						"_search"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "Rodrigo CREA Uno nodeJs final",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-ndjson",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" :\"22\",\r\n    \"index\":\"marcos\",\r\n    \"name\" :\"33333333333333333\",\r\n    \"createdOn\": \"2019-04-08T11:28:20.906+0000\" ,\r\n    \"startDate\": \"2019-04-08T11:28:20.906+0000\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:83/api/v1/productos/busqueda",
+					"host": [
+						"localhost"
+					],
+					"port": "83",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"busqueda"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "Rodrigo MODIFICA Uno nodeJs final Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-ndjson",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" :\"22\",\r\n    \"index\":\"marcos\",\r\n    \"name\" :\"33333333333333333\",\r\n    \"createdOn\": \"2019-04-08T11:28:20.906+0000\" ,\r\n    \"startDate\": \"2019-04-08T11:28:20.906+0000\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:83/api/v1/productos/modifica",
+					"host": [
+						"localhost"
+					],
+					"port": "83",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"modifica"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "Rodrigo LEE uno final NodeJs final",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/x-ndjson"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:83/api/v1/productos/leyendo/22",
+					"host": [
+						"localhost"
+					],
+					"port": "83",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"leyendo",
+						"22"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "Rodrigo LEE TODOS  NodeJs final",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/x-ndjson",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:83/api/v1/productos/todos",
+					"host": [
+						"localhost"
+					],
+					"port": "83",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"todos"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "Rodrigo BORRA uno final NodeJs final Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/x-ndjson"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:83/api/v1/productos/borra/665",
+					"host": [
+						"localhost"
+					],
+					"port": "83",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"borra",
+						"665"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "__Rodrigo Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"type": "text",
+						"value": "1703323053103110885/10.0.1.4",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"index\":\"script\",\r\n    \"type\":\"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:83/api/v1/productos/festivota",
+					"host": [
+						"localhost"
+					],
+					"port": "83",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"festivota"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "__Rodrigo graba",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-ndjson",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "      {\r\n       \"index\":\"kibana_sample_data_flights\",\r\n       \"type\":\"_doc\",\r\n       \"FlightNum\":\"YBJJV96\"\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:83/api/v1/productos/busqueda",
+					"host": [
+						"localhost"
+					],
+					"port": "83",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"busqueda"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "Rodrigo crea indice",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"badger\": {\r\n    \"properties\": {\r\n      \"name\": {\"type\": \"string\"},\r\n      \"role\": {\"type\": \"string\"},\r\n      \"bio\": {\"type\": \"string\"}\r\n     }\r\n   }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9200/animal/badger/ _mapping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"animal",
+						"badger",
+						" _mapping"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "rutas calcula total puntos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/plain",
+						"disabled": true
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"type": "text",
+						"value": "1703323053103110885/10.0.1.4",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t[ \r\n\t\t\"DIS_10-CHAIR_BLUE\"\r\n\t]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/productos/CHAIR_WHITE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"CHAIR_WHITE"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "rutas agregar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/plain",
+						"disabled": true
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"type": "text",
+						"value": "1703323053103110885/10.0.1.4",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\r\n\t\t\"price\": 0.99,\r\n\t\t\"productCode\": \"sillitas1\",\r\n\t\t\"name\": \"para niños1\"\t\r\n\t}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/productos/crud/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"crud",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "rutas modificar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/plain",
+						"disabled": true
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"type": "text",
+						"value": "1703323053103110885/10.0.1.4",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\r\n        \"price\": 111,\r\n        \"productCode\": \"DIS_10-CHAIR_BLUE\",\r\n        \"name\": \"Blue plastic chair22222211111\"\r\n\t}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/productos/crud/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"crud",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "rutas eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "text/plain",
+						"disabled": true
+					},
+					{
+						"key": "TRANSACTION_ID",
+						"type": "text",
+						"value": "1703323053103110885/10.0.1.4",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\r\n\t\t\"productCode\": \"CHAIR_RED\"\r\n\t}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/productos/crud/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"crud",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "BORRA uno final NodeJs final Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/x-ndjson"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:83/api/v1/productos/borra/LmGq9nUBPqidnj4IcE19",
+					"host": [
+						"localhost"
+					],
+					"port": "83",
+					"path": [
+						"api",
+						"v1",
+						"productos",
+						"borra",
+						"LmGq9nUBPqidnj4IcE19"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "request file recovery"
+			},
+			"response": []
+		},
+		{
+			"name": "marco1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marco1 Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marco2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Open\":\"55919.01\",\t\r\n    \"High\":\"58354.02\",\r\n    \"Low\":\"55537.03\",\r\n    \"Close\":\"55537.03\",\r\n    \"VolumeBTC\":\"3562.04\",\r\n    \"VolumeCurrency\":\"203651061.05\",\r\n    \"WeightedPrice\":\"57157.06\",\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/product/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/product/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/product/calcula/RSI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product",
+						"calcula",
+						"RSI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/product/ Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/product/calcula/SPREAD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product",
+						"calcula",
+						"SPREAD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/product/data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/product/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product",
+						"data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
